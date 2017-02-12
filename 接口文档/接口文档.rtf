@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg936\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue0;\red0\green0\blue255;\red163\green21\blue21;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab674
+\pard\tx674\pardeftab674\pardirnatural
+
+\f0\fs28 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  NetInterface.h\cf0 \
+\cf2 //  MyFreeLimit\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by mac on 14-1-3.\cf0 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  mac. All rights reserved.\cf0 \
+\cf2 //\cf0 \
+\
+\cf3 #ifndef MyFreeLimit_NetInterface_h\
+#define MyFreeLimit_NetInterface_h\
+\cf0 \
+\
+\cf2 //
+\f1 \'cf\'de\'c3\'e2\'d2\'b3\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=1&category_id=6014&timestamp=20140410085308&sign=XXXXXXXXXXXXXXXX"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=1&category_id=6014&timestamp=20140410085308&sign=XXXXXXXXXXXXXXXX}}\cf0 \
+\cf3 #define LIMIT_URL @\cf4 "http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=%d&category_id=%@"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'bd\'b5\'bc\'db\'d2\'b3\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=1&category_id=6014"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=1&category_id=6014}}\cf0 \
+\cf3 #define SALE_URL @\cf4 "http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=%d&category_id=%@"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'c3\'e2\'b7\'d1\'d2\'b3\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/applications/free?currency=rmb&page=1&category_id=6014"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/applications/free?currency=rmb&page=1&category_id=6014}}\cf0 \
+\cf3 #define FREE_URL @\cf4 "http://iappfree.candou.com:8080/free/applications/free?currency=rmb&page=%d&category_id=%@"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'d7\'a8\'cc\'e2\'bd\'e7\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/special?page=1&limit=5"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/special?page=1&limit=5}}\cf0 \
+\cf3 #define TOPIC_URL @\cf4 "http://iappfree.candou.com:8080/free/special?page=%d&limit=5"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'c8\'c8\'b0\'f1\'d2\'b3\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://open.candou.com/mobile/hot/page/1&category_id=6014"}}{\fldrslt \cf3 http://open.candou.com/mobile/hot/page/1&category_id=6014}}\cf0 \
+\cf3 #define HOT_URL @\cf4 "http://open.candou.com/mobile/hot/page/%d&category_id=%@"\cf3 \
+\cf0 \
+\
+\cf2 //
+\f1 \'b7\'d6\'c0\'e0\'bd\'e7\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://open.candou.com/app/count"}}{\fldrslt \cf3 http://open.candou.com/app/count}}\cf0 \
+\cf3 #define CATE_URL @\cf4 "http://open.candou.com/app/count"\cf3 \
+\cf0 \
+\cf2 /*\
+ \{\
+ "category": [\
+ \{\
+ "categoryId": "6000",\
+ "categoryName": "Business",\
+ "count": "1066",\
+ "lessenPrice": "57443"\
+ \},\
+ \{\
+ "categoryId": "6001",\
+ "categoryName": "Weather",\
+ "count": "198",\
+ "lessenPrice": "1837"\
+ \},\
+ */\cf0 \
+\
+\
+\
+\cf2 //
+\f1 \'cf\'ea\'c7\'e9\'d2\'b3\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 // {\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/applications/688743207?currency=rmb"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/applications/688743207?currency=rmb}}\cf0 \
+\cf3 #define DETAIL_URL @\cf4 "http://iappfree.candou.com:8080/free/applications/%d?currency=rmb"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'d6\'dc\'b1\'df\'ca\'b9\'d3\'c3\'d3\'a6\'d3\'c3\'bd\'d3\'bf\'da
+\f0 :\cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/applications/recommend?longitude=116.344539&latitude=40.034346"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/applications/recommend?longitude=116.344539&latitude=40.034346}}\cf0 \
+\cf2 //
+\f1 \'b2\'ce\'ca\'fd
+\f0 longitude,latitude
+\f1 \'cc\'ee\'d0\'b4\'be\'ad\'b6\'c8\'ba\'cd\'ce\'b3\'b6\'c8\'a1\'a3
+\f0 \cf0 \
+\cf3 #define NEARBY_APP_URL @\cf4 "http://iappfree.candou.com:8080/free/applications/recommend?longitude=%lf&latitude=%lf"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'cb\'d1\'cb\'f7\'bd\'e7\'c3\'e6\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 // {\field{\*\fldinst{HYPERLINK "http://open.candou.com/search/app/word/app/app/iphone/rank/0/start/1/limit/40"}}{\fldrslt \cf3 http://open.candou.com/search/app/word/app/app/iphone/rank/0/start/1/limit/40}}\cf0 \
+\cf3 #define SEARCH_URL @\cf4 "http://open.candou.com/search/app/word/%@/app/iphone/rank/0/start/1/limit/40"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'b2\'cf\'b6\'b9\'cd\'c6\'bc\'f6\'d3\'a6\'d3\'c3\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://open.candou.com/mobile/candou"}}{\fldrslt \cf3 http://open.candou.com/mobile/candou}}\cf0 \
+\cf3 #define CANDOU_URL @\cf4 "http://open.candou.com/mobile/candou"\cf3 \
+\cf0 \
+\cf2 //
+\f1 \'c5\'e4\'d6\'c3\'bd\'e7\'c3\'e6
+\f0 -
+\f1 \'ce\'d2\'b5\'c4\'d5\'cb\'bb\'a7\'bd\'d3\'bf\'da
+\f0 \cf0 \
+\cf2 //{\field{\*\fldinst{HYPERLINK "http://iappfree.candou.com:8080/free/categories/limited"}}{\fldrslt \cf3 http://iappfree.candou.com:8080/free/categories/limited}}\cf0 \
+\cf3 #define MYUSER_URL @\cf4 "http://iappfree.candou.com:8080/free/categories/limited"\cf3 \
+\cf0 \
+\cf3 #endif\
+}

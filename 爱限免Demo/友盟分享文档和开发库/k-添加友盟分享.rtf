@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red100\green56\blue32;\red196\green26\blue22;
+\red63\green110\blue116;\red38\green71\blue75;\red170\green13\blue145;\red28\green0\blue207;\red46\green13\blue110;
+\red12\green90\blue1;\red38\green38\blue38;\red151\green0\blue126;\red181\green0\blue19;\red73\green17\blue135;
+\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15800\viewh9680\viewkind0
+\deftab1155
+\pard\tx1155\pardeftab1155\pardirnatural
+
+\f0\fs48 \cf0 \CocoaLigature0 \'ce\'a2\'b2\'a9\'b7\'d6\'cf\'ed
+\f1  \
+\
+	
+\f0 \'d7\'a2\'d2\'e2
+\f1 : 
+\f0 \'d3\'d1\'c3\'cb\'bf\'e2\'d6\'d0
+\f1 (QQ
+\f0 \'b5\'c4\'cd\'b7\'ce\'c4\'bc\'fe
+\f1 )
+\f0 \'d4\'da\'bf\'e2\'b5\'c4\'c2\'b7\'be\'b6\'b8\'c4\'b1\'e4\'d6\'ae\'ba\'f3\'d0\'e8\'d2\'aa\'d6\'d8\'d0\'c2\'cc\'ed\'bc\'d3
+\f1 \
+\
+	\cf2 //
+\f0 \'d3\'d1\'c3\'cb\'b7\'d6\'cf\'ed
+\f1 \cf0 \
+    \cf2 1.
+\f0 \'d7\'a2\'b2\'e1
+\f1 appkey\cf0 \
+    \cf2   
+\f0 \'b9\'d9\'cd\'f8\'d7\'a2\'b2\'e1
+\f1 , 
+\f0 \'bb\'f2\'d5\'df\'d6\'b1\'bd\'d3\'ca\'b9\'d3\'c3\'b9\'d9\'cd\'f8\'ce\'c4\'b5\'b5\'d6\'d0\'b5\'c4
+\f1 appkey\cf0 \
+    \cf2       507fcab25270157b37000010\cf0 \
+    \
+    \cf2 2.
+\f0 \'b5\'bc\'c8\'eb
+\f1 UMSocial
+\f0 \'bf\'e2\'ce\'c4\'bc\'fe ,\'bc\'d3\'d4\'d8\'d0\'e8\'d2\'aa\'b5\'c4\'d6\'a7\'b3\'d6\'bf\'e2\'ce\'c4\'bc\'fe
+\f1 \cf0 \
+    	
+\f0 \cf2 \
+	     
+\f1 Security.framework,\cf0 \
+    \cf2   libiconv.dylib,\cf0 \
+    \cf2   SystemConfiguration.framework,\cf0 \
+    \cf2   CoreGraphics.framework
+\f0 \'a3\'ac
+\f1 \cf0 \
+    \cf2   libsqlite3.dylib
+\f0 \'a3\'ac
+\f1 \cf0 \
+    \cf2   CoreTelephony.framework,\cf0 \
+    \cf2   libstdc++.dylib,\cf0 \
+    \cf2   libz.dylib
+\f0 \'a1\'a3\
+\
+\
+	
+\f1 3.
+\f0 AppDelegate\'d6\'d0\'b3\'f5\'ca\'bc\'bb\'af\
+\pard\tx1155\pardeftab1155\pardirnatural
+
+\fs36 \cf2 		
+\f1 (1)
+\f0 \'cf\'c8\'b0\'fc\'ba\'ac\'cd\'b7\'ce\'c4\'bc\'fe\
+	
+\f1 \cf3 	#import \cf4 "UMSocial.h"\cf3 \
+		#import \cf4 "UMSocialWechatHandler.h"\cf3 \
+		#import \cf4 "TencentOpenAPI/QQApiInterface.h"\cf3 \
+		#import \cf4 "TencentOpenAPI/TencentOAuth.h"\
+\
+
+\f0 \cf2 \
+
+\f1 \cf0 		\cf2 (2)
+\f0 \'bc\'d3\'d4\'d8\'ca\'b1
+\f1 ---
+\f0 \'b3\'f5\'ca\'bc\'bb\'af\'b2\'a2\'c7\'d2\'c9\'e8\'d6\'c3
+\f1 AppKey\
+\
+	\cf0 [\cf5 UMSocialData\cf0  \cf6 setAppKey\cf0 :\cf4 @"507fcab25270157b37000010"\cf0 ];\
+    	\cf2 //
+\f0 \'c9\'e8\'d6\'c3\'ce\'a2\'d0\'c5
+\f1 AppId
+\f0 \'a3\'ac
+\f1 url
+\f0 \'b5\'d8\'d6\'b7\'b4\'ab
+\f1 nil
+\f0 \'a3\'ac\'bd\'ab\'c4\'ac\'c8\'cf\'ca\'b9\'d3\'c3\'d3\'d1\'c3\'cb\'b5\'c4\'cd\'f8\'d6\'b7
+\f1 \cf0 \
+    	[\cf5 UMSocialWechatHandler\cf0  \cf6 setWXAppId\cf0 :\cf4 @"wxd9a39c7122aa6516"\cf0  \cf6 url\cf0 :\cf7 nil\cf0 ];\
+    	\cf2 //
+\f0 \'c9\'e8\'d6\'c3\'ca\'d6\'bb\'fa
+\f1 QQ
+\f0 \'b5\'c4
+\f1 AppId
+\f0 \'a3\'ac
+\f1 url
+\f0 \'b4\'ab
+\f1 nil
+\f0 \'a3\'ac\'bd\'ab\'ca\'b9\'d3\'c3\'d3\'d1\'c3\'cb\'b5\'c4\'cd\'f8\'d6\'b7
+\f1 \cf0 \
+    	[\cf5 UMSocialConfig\cf0  \cf6 setQQAppId\cf0 :\cf4 @"100424468"\cf0  \cf6 url\cf0 :\cf7 nil\cf0  \cf6 importClasses\cf0 :\cf8 @[\cf0 [\cf5 QQApiInterface\cf0  \cf9 class\cf0 ],[\cf5 TencentOAuth\cf0  \cf9 class\cf0 ]\cf8 ]\cf0 ];\
+    
+\fs48 \
+  \
+\
+	\cf2 <4> 
+\f0 \'c9\'e8\'d6\'c3URL type\
+		\'b7\'d6\'cf\'ed\'d7\'e9\'bc\'fe\'be\'cd\'c4\'dc\'ba\'cd\'ce\'a2\'d0\'c5\'ba\'cdQQ\'bd\'a8\'c1\'a2\'cd\'a8\'d0\'c5\
+\pard\tx1155\pardeftab1155\pardirnatural
+
+\f1 \cf0 \
+	\cf2 UMShareDemo-Info.plist\
+		URL types\
+			item 0 \
+				URL Schemes\
+					item 0	-->		wxd9a39c7122aa6516\
+					item 1  -->		QQ05FA957C\cf0 \
+\
+//--------------------------------------------\
+\
+\
+\
+\
+    \
+    \cf2 //5.
+\f0 \'b5\'da\'d2\'bb\'d6\'d6\'b7\'d6\'cf\'ed\'b7\'bd\'ca\'bd
+\f1 (
+\f0 \'ca\'b9\'d3\'c3\'d3\'d1\'c3\'cb\'b5\'c4
+\f1 API)\
+\
+\pard\pardeftab720\sl400
+
+\f2\fs36 \cf10 \CocoaLigature1 //
+\f0 \'d7\'a2\'d2\'e2\'a3\'ba\'b7\'d6\'cf\'ed\'b5\'bd\'ce\'a2\'d0\'c5\'ba\'c3\'d3\'d1\'a1\'a2\'ce\'a2\'d0\'c5\'c5\'f3\'d3\'d1\'c8\'a6\'a1\'a2\'ce\'a2\'d0\'c5\'ca\'d5\'b2\'d8\'a1\'a2
+\f2 QQ
+\f0 \'bf\'d5\'bc\'e4\'a1\'a2
+\f2 QQ
+\f0 \'ba\'c3\'d3\'d1\'a1\'a2\'c0\'b4\'cd\'f9\'ba\'c3\'d3\'d1\'a1\'a2\'c0\'b4\'cd\'f9\'c5\'f3\'d3\'d1\'c8\'a6\'a1\'a2\'d2\'d7\'d0\'c5\'ba\'c3\'d3\'d1\'a1\'a2\'d2\'d7\'d0\'c5\'c5\'f3\'d3\'d1\'c8\'a6\'a1\'a2
+\f2 Facebook
+\f0 \'a1\'a2
+\f2 Twitter
+\f0 \'a1\'a2
+\f2 Instagram
+\f0 \'b5\'c8\'c6\'bd\'cc\'a8\'d0\'e8\'d2\'aa\'b2\'ce\'bf\'bc\'b8\'f7\'d7\'d4\'b5\'c4\'bc\'af\'b3\'c9\'b7\'bd\'b7\'a8
+\f2 \cf11 \
+\cf10 //
+\f0 \'c8\'e7\'b9\'fb\'d0\'e8\'d2\'aa\'b7\'d6\'cf\'ed\'bb\'d8\'b5\'f7\'a3\'ac\'c7\'eb\'bd\'ab
+\f2 delegate
+\f0 \'b6\'d4\'cf\'f3\'c9\'e8\'d6\'c3
+\f2 self
+\f0 \'a3\'ac\'b2\'a2\'ca\'b5\'cf\'d6\'cf\'c2\'c3\'e6\'b5\'c4\'bb\'d8\'b5\'f7\'b7\'bd\'b7\'a8
+\f2 \cf11 \
+[UMSocialSnsService presentSnsIconSheetView:\cf12 self\cf11 \
+                                     appKey:@\cf13 "507fcab25270157b37000010"\cf11 \
+                                  shareText:@\cf13 "
+\f0 \'d3\'d1\'c3\'cb\'c9\'e7\'bb\'e1\'bb\'af\'b7\'d6\'cf\'ed\'c8\'c3\'c4\'fa\'bf\'ec\'cb\'d9\'ca\'b5\'cf\'d6\'b7\'d6\'cf\'ed\'b5\'c8\'c9\'e7\'bb\'e1\'bb\'af\'b9\'a6\'c4\'dc\'a3\'ac
+\f2 www.umeng.com/social"\cf11 \
+                                 shareImage:[\cf14 UIImage\cf11  imageNamed:@\cf13 "http://www.umeng.com/images/pic/banner_module_social.png"\cf11 ]\
+                            shareToSnsNames:[\cf14 NSArray\cf11  arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,\cf12 nil\cf11 ]\
+                                   delegate:\cf12 nil\cf11 ];
+\f1\fs48 \cf0 \CocoaLigature0 \
+\pard\tx1155\pardeftab1155\pardirnatural
+\cf0     \
+    \
+\
+	\cf2 //6. 
+\f0 \'b7\'d6\'cf\'ed\'b5\'c4\'ca\'b1\'ba\'f2\'d6\'b4\'d0\'d0\'d2\'d4\'cf\'c2\'b4\'fa\'c2\'eb\'bc\'b4\'bf\'c9
+\f1 \cf0 \
+	    
+\fs36 [[\cf5 UMSocialControllerService\cf0  \cf6 defaultControllerService\cf0 ] \cf6 setShareText\cf0 :\cf4 @"
+\f0 \'b7\'d6\'cf\'ed\'c4\'da\'c7\'b6\'ce\'c4\'d7\'d6
+\f1 "\cf0  shareImage:[\cf6 UIImage\cf0  \cf15 imageNamed\cf0 :\cf4 @"icon"\cf0 ] \cf6 socialUIDelegate\cf0 :\cf7 nil\cf0 ];     \cf2 //
+\f0 \'c9\'e8\'d6\'c3\'b7\'d6\'cf\'ed\'c4\'da\'c8\'dd\'ba\'cd\'bb\'d8\'b5\'f7\'b6\'d4\'cf\'f3
+\f1 \cf0 \
+    [\cf5 UMSocialSnsPlatformManager\cf0  \cf6 getSocialPlatformWithName\cf0 :\cf5 UMShareToSina\cf0 ].\cf5 snsClickHandler\cf0 (\cf7 self\cf0 ,[\cf5 UMSocialControllerService\cf0  \cf6 defaultControllerService\cf0 ],\cf7 YES\cf0 );\
+\pard\tx1155\pardeftab1155\pardirnatural
+\cf4 \
+\pard\tx1155\pardeftab1155\pardirnatural
+
+\f0\fs48 \cf2 \
+\'d0\'c2\'c0\'cb\'ce\'a2\'b2\'a9\
+2289702749@qq.com\
+ios1422\
+\
+\
+\
+\
+}
